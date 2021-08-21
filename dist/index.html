@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>demo_001</title><script>(function(){
+        function initElementDom() {
+          var docEle = document.documentElement
+          var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
+          var recalc = function() {
+            var clientWidth = docEle.clientWidth
+            if (!clientWidth) {
+              return
+            }
+            var fontSizeNum = 100 * (clientWidth / 414)
+            docEle.style.fontSize = fontSizeNum + 'px'
+            window.fontSizeNum = fontSizeNum
+          }
+          recalc()
+          window.addEventListener(resizeEvt, recalc, false)
+          window.addEventListener('DOMContentLoaded', recalc, false)
+        }
+        initElementDom()
+      })()</script><link href="/css/app.ddf08c22.css" rel="preload" as="style"><link href="/js/app.d08859a8.js" rel="preload" as="script"><link href="/js/chunk-vendors.1812bb13.js" rel="preload" as="script"><link href="/css/app.ddf08c22.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but demo_001 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.1812bb13.js"></script><script src="/js/app.d08859a8.js"></script></body></html>
